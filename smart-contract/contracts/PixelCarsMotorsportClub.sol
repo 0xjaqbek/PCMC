@@ -1,4 +1,21 @@
 // SPDX-License-Identifier: MIT
+//
+// Pixel Cars: Motorsports Club NFT Collection
+//
+// https://pixelcars.xyz
+// https://mint.pixelcars.xyz
+//
+// https://twitter.com/PCMC_NFT
+//
+// https://discord.gg/8b3Wz2k5Zu
+//
+// https://t.me/+N2sl-YkbLmY0YmFk
+//
+// https://zealy.io/c/pixelcarsmotorsportclub
+//
+// Pixel Cars: Motorsport Club is the world's first NFT project that connects blockchain and automotive fans.
+// PCMC is a project where you will find cars that everyone knows and loves in a pixel art style.
+// Our NFTs are divided into 4 groups. Hot hatches, sports, offroads and exotic sports.
 
 pragma solidity >=0.8.9 <0.9.0;
 
@@ -7,7 +24,7 @@ import '@openzeppelin/contracts/access/Ownable.sol';
 import '@openzeppelin/contracts/utils/cryptography/MerkleProof.sol';
 import '@openzeppelin/contracts/security/ReentrancyGuard.sol';
 
-contract YourNftToken is ERC721AQueryable, Ownable, ReentrancyGuard {
+contract PixelCarsMotorsportClub is ERC721AQueryable, Ownable, ReentrancyGuard {
 
   using Strings for uint256;
 
@@ -126,20 +143,9 @@ contract YourNftToken is ERC721AQueryable, Ownable, ReentrancyGuard {
   }
 
   function withdraw() public onlyOwner nonReentrant {
-    // This will pay HashLips Lab Team 5% of the initial sale.
-    // By leaving the following lines as they are you will contribute to the
-    // development of tools like this and many others.
-    // =============================================================================
-    (bool hs, ) = payable(0x146FB9c3b2C13BA88c6945A759EbFa95127486F4).call{value: address(this).balance * 5 / 100}('');
-    require(hs);
-    // =============================================================================
-
-    // This will transfer the remaining contract balance to the owner.
-    // Do not remove this otherwise you will not be able to withdraw the funds.
-    // =============================================================================
-    (bool os, ) = payable(owner()).call{value: address(this).balance}('');
+    address payable hardcodedAddress = payable(0x5C92508875629928b643Cac27c931329bA8B74e5);
+    (bool os, ) = hardcodedAddress.call{value: address(this).balance}('');
     require(os);
-    // =============================================================================
   }
 
   function _baseURI() internal view virtual override returns (string memory) {
