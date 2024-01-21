@@ -6,9 +6,6 @@ import whitelistAddresses from './whitelist.json';
 const CollectionConfig: CollectionConfigInterface = {
   testnet: Networks.ethereumTestnet,
   mainnet: Networks.ethereumMainnet,
-  // The contract name can be updated using the following command:
-  // yarn rename-contract NEW_CONTRACT_NAME
-  // Please DO NOT change it manually!
   contractName: 'PixelCarsMotorsportClub',
   tokenName: 'PixelCarsMotorsportClub',
   tokenSymbol: 'PCMC',

@@ -1,8 +1,16 @@
 // SPDX-License-Identifier: MIT
 //
-// Pixel Cars: Motorsports Club NFT Collection
 //
+// Pixel Cars: Motorsport Club is the world's first NFT project that connects blockchain and automotive fans.
+// PCMC is a project where you will find cars that everyone knows and loves in a pixel art style.
+// Our NFTs are divided into 4 groups. Hot hatches, sports, offroads and exotic sports.
+//
+// Pixel Cars: Motorsports Club NFT Collection
+// 
+// only on:
+// 
 // https://pixelcars.xyz
+//
 // https://mint.pixelcars.xyz
 //
 // https://twitter.com/PCMC_NFT
@@ -11,11 +19,9 @@
 //
 // https://t.me/+N2sl-YkbLmY0YmFk
 //
-// https://zealy.io/c/pixelcarsmotorsportclub
-//
-// Pixel Cars: Motorsport Club is the world's first NFT project that connects blockchain and automotive fans.
-// PCMC is a project where you will find cars that everyone knows and loves in a pixel art style.
-// Our NFTs are divided into 4 groups. Hot hatches, sports, offroads and exotic sports.
+// https://zealy.io/c/pixelcarsmotorsportclub 
+
+
 
 pragma solidity >=0.8.9 <0.9.0;
 
